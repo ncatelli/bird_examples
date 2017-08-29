@@ -1,0 +1,37 @@
+{
+  "name": "peer2",
+  "chef_environment": "_default",
+  "normal": {
+    "tags": [
+
+    ],
+    "bird": {
+      "conf": {
+        "ipv4": {
+           "filter": {
+          },
+          "protocol": {
+            "kernel": {
+              "metric": 0,
+              "import": "none",
+              "export": "all"
+            },
+            "direct": {
+            },
+            "device": {},
+            "bgp peer1": {
+             "local": "as 64513",
+             "neighbor": "10.0.0.10 as 64512",
+             "export": "none"
+            }
+          }
+        }
+      }
+    }
+  },
+  "policy_name": null,
+  "policy_group": null,
+  "run_list": [
+    "recipe[bird::default]"
+  ]
+}
