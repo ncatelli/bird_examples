@@ -1,0 +1,6 @@
+[submodule "cookbooks/sysctl"]
+	path = cookbooks/sysctl
+	url = https://github.com/ncatelli/sysctl.git
+[submodule "cookbooks/bird"]
+	path = cookbooks/bird
+	url = https://github.com/ncatelli/bird.git
